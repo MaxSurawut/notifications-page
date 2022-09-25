@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+:root{
+    --alert-color : hsl(1, 90%, 64%);
+    --primary-color : hsl(219, 85%, 26%);
+    --background-color : hsl(210, 60%, 98%);
+    --card-color : hsl(0, 0%, 100%);
+    --message-color : hsl(219, 14%, 63%);
+    --dark-message-color : hsl(219, 12%, 42%);
+    --vary-dark-message-color : hsl(224, 21%, 14%);
+}
+body{
+    background-color: var(--background-color);
+}
+img{
+    width: 100%;
+}
+.post{
+    color: var(--dark-message-color);
+    font-weight: 800;
+    cursor: pointer;
+}
+.group{
+    color :var(--primary-color);
+    font-weight: 800;
+    cursor: pointer;
+}
+.time{
+    font-size: 12px;
+    font-weight: lighter;
+    color: var(--message-color);
+}
+.messagebox{
+    margin-top: 1rem;
+    border: 1px solid var(--message-color);
+    padding: 1rem;
+}
+.profile{
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+}
+.dot{
+    margin-left: 5px;
+    height: 7px;
+    width: 7px;
+    background-color: var(--alert-color);
+    border-radius: 50%;
+    display: inline-block;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notification-section{
+    max-width: 730px;
+    min-height: 835px;
+    background-color: var(--card-color);
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+}
+.notification-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+}
+.notification-header p span{
+    background-color: var(--primary-color);
+    padding: 1px 7px;
+    border-radius: 5px;
+    color: #fff;
+}
+.notification-clear{
+    color: var(--message-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+.notification-message-area{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.notification-message-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem;
+}
+.notification-message-content.unread{
+    background-color: #f6fafd;
+    border-radius: 5px;
+}
+.notification-message-profile{
+    width: 10%; 
+}
+.notification-message-profile img{
+    width: 60%;
+    cursor: pointer;
+}
+.notification-message-text{
+    width: 100%;
+}
+.notification-message-text p{
+    color: var(--message-color);
+}
+@media only screen and (max-width:375px){
+    .notification-section{
+        max-width: 375px;
+        margin: 0 auto;
+        border-radius: 0;
+        padding: 1rem;
+    }
+}
